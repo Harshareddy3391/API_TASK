@@ -1,4 +1,7 @@
 from fastapi import FastAPI 
 from sqlalchemy.orm import Session
 
-from model import Candidate
+from models import Candidate
+
+from dependencies import get_db
+ 

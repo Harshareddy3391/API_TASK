@@ -1,7 +1,7 @@
 from sqlalchemy import Column,Integer,String,Date,Time,ForeignKey 
 from database import Base
 
-class Candite(Base):
+class Candidate(Base):
     __tablename__="candidates"
     id=Column(Integer,primary_key=True,index=True)
     name=Column(String(200),nullable=False)
@@ -17,6 +17,6 @@ class Interview(Base):
 
     __tablename__="interview"
     id=Column(Integer,primary_key=True,index=True)
-    Candite_id=Column(Integer,ForeignKey=Candite.id)
+    Candidate_id=Column(Integer,ForeignKey=Candidate.id)
     Interview_date=Column(Date)
     Interview_time=Column(Time)

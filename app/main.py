@@ -9,12 +9,7 @@ app = FastAPI(
     version="1.0.0",
     description="Applicant Tracking System"
 )
-
-
-@app.get("/")
-def home():
-    return {"message": "ATS API Running"}
-
+ 
 
 
 #api router

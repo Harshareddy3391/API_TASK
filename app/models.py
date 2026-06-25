@@ -9,7 +9,7 @@ class Candidate(Base):
     name = Column(String(200), nullable=False)
     email = Column(String(100), unique=True, nullable=False)
     phone = Column(String(20), unique=True, nullable=False)
-    password = Column(String(255), nullable=False)
+     
     skills = Column(String(300))
     experience = Column(Integer)
 

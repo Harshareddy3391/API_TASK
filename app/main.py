@@ -7,7 +7,8 @@ Base.metadata.create_all(bind=engine)
 app = FastAPI(
     title="ATS API",
     version="1.0.0",
-    description="Applicant Tracking System"
+    description="Applicant Tracking System",
+       redoc_url="/redoc",
 )
  
 
